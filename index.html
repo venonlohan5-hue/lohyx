@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><title>Lohyx Hub – le launcher Minecraft</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="icone.png">
+<meta name="description" content="Lohyx Hub : un launcher Minecraft moderne avec mods, Boost FPS et détecteur de puissance du PC.">
+<style>
+:root{--a:#1bd96a;--v:#7c5cff;--bg:#090b0f;--line:rgba(255,255,255,.09);--txt:#f3f6fa;--mut:#8d98a8}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:"Segoe UI Variable","Segoe UI",system-ui,sans-serif;overflow-x:hidden}
+.orb{position:fixed;border-radius:50%;filter:blur(120px);z-index:-1;animation:fl 20s ease-in-out infinite alternate}
+.o1{width:560px;height:560px;background:var(--a);opacity:.22;top:-200px;left:-100px}.o2{width:520px;height:520px;background:var(--v);opacity:.28;bottom:-200px;right:-120px;animation-delay:-8s}
+@keyframes fl{to{transform:translate(70px,50px) scale(1.15)}}
+header{display:flex;align-items:center;gap:26px;padding:20px 6vw;position:sticky;top:0;background:rgba(9,11,15,.7);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);z-index:5}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:3px;font-size:19px}.logo img{width:36px;height:36px}
+header a{color:var(--mut);text-decoration:none;font-weight:600;font-size:14.5px}header a:hover{color:var(--txt)}.sp{flex:1}
+.btn{display:inline-block;padding:13px 26px;border-radius:14px;background:var(--a);color:#06100a;font-weight:800;text-decoration:none;font-size:16px;transition:.2s;box-shadow:0 10px 34px rgba(27,217,106,.35)}
+.btn:hover{transform:translateY(-2px) scale(1.03)}.btn.s{background:rgba(255,255,255,.08);color:var(--txt);box-shadow:none;border:1px solid var(--line)}
+.hero{text-align:center;padding:90px 6vw 60px}.hero img{width:150px;filter:drop-shadow(0 0 40px rgba(27,217,106,.45))}
+h1{font-size:clamp(40px,7vw,78px);font-weight:900;letter-spacing:4px;margin:18px 0 10px;background:linear-gradient(90deg,var(--a),#a99bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mut);font-size:19px;max-width:620px;margin:0 auto 32px;line-height:1.55}.hero .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.chip{display:inline-block;margin-top:22px;padding:7px 16px;border-radius:30px;border:1px solid var(--line);background:rgba(255,255,255,.05);font-size:13px;color:var(--mut)}
+section{padding:60px 6vw;max-width:1180px;margin:auto}h2{font-size:32px;font-weight:800;margin-bottom:8px}.sub{color:var(--mut);margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{padding:24px;border-radius:20px;background:rgba(255,255,255,.05);border:1px solid var(--line);backdrop-filter:blur(12px);transition:.2s}.card:hover{transform:translateY(-4px);border-color:rgba(27,217,106,.5)}
+.card i{font-style:normal;font-size:28px;display:block;margin-bottom:12px}.card b{font-size:17px}.card p{color:var(--mut);font-size:14px;margin-top:6px;line-height:1.5}
+.n{width:38px;height:38px;border-radius:50%;background:var(--a);color:#06100a;font-weight:900;display:grid;place-items:center;margin-bottom:12px}
+.leg{display:flex;gap:14px;flex-wrap:wrap}.leg span{padding:12px 24px;border-radius:13px;font-weight:800;color:#07110a}
+.log{padding:20px 24px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid var(--line);margin-bottom:12px}.log b{color:var(--a)}.log span{color:var(--mut);font-size:13px;margin-left:8px}.log ul{margin:10px 0 0 20px;color:#c3ccd8;line-height:1.7;font-size:14.5px}
+footer{padding:40px 6vw;text-align:center;color:var(--mut);font-size:13px;border-top:1px solid var(--line);line-height:1.7}
+@media(max-width:700px){header a.l{display:none}}
+</style></head><body>
+<div class="orb o1"></div><div class="orb o2"></div>
+<header><div class="logo"><img src="icone.png" alt="">LOHYX HUB</div><span class="sp"></span><a class="l" href="#fonctions">Fonctions</a><a class="l" href="#installer">Installer</a><a class="l" href="#nouveautes">Nouveautés</a><a class="btn" style="padding:9px 18px;font-size:14px" href="LohyxHub.pyw" download>Télécharger</a></header>
+<div class="hero"><img src="icone.png" alt="Logo Lohyx Hub"><h1>LOHYX HUB</h1>
+<p>Le launcher Minecraft nouvelle génération : mods en un clic, Boost FPS, serveurs en direct… et il sait si ton PC est assez puissant.</p>
+<div class="row"><a class="btn" href="LohyxHub.pyw" download>⬇ Télécharger Lohyx Hub</a><a class="btn s" href="#installer">Comment l'installer ?</a></div>
+<div class="chip" id="ver">Version …</div></div>
+<section id="fonctions"><h2>Tout ce qu'il faut pour jouer</h2><p class="sub">Une interface moderne, simple, et rapide.</p><div class="grid">
+<div class="card"><i>🎮</i><b>Profils</b><p>Vanilla, Fabric ou Forge, chacun avec ses mods, ses mondes et sa mémoire.</p></div>
+<div class="card"><i>🧩</i><b>Mods, shaders, packs</b><p>Recherche et installation en un clic depuis Modrinth, dépendances comprises.</p></div>
+<div class="card"><i>🚀</i><b>Boost FPS</b><p>Installe Sodium, Lithium et d'autres mods de performance d'un seul clic.</p></div>
+<div class="card"><i>⚡</i><b>Test de puissance</b><p>Le bouton Jouer change de couleur selon ce que ton PC peut encaisser.</p></div>
+<div class="card"><i>🌐</i><b>Serveurs en direct</b><p>Joueurs en ligne, ping et bouton « Rejoindre ».</p></div>
+<div class="card"><i>🔄</i><b>Mises à jour auto</b><p>Lohyx Hub te prévient quand une nouvelle version est prête.</p></div></div></section>
+<section><h2>Ton PC peut-il le faire tourner ?</h2><p class="sub">Chaque profil affiche son verdict.</p><div class="leg">
+<span style="background:#22c55e">Parfait</span><span style="background:#facc15">Il faut se calmer</span><span style="background:#fb923c">Pas assez puissant</span><span style="background:#ef4444;color:#fff">Quasi impossible</span></div></section>
+<section id="installer"><h2>Installer en 3 étapes</h2><p class="sub">Windows 10 ou 11.</p><div class="grid">
+<div class="card"><div class="n">1</div><b>Installe Python</b><p>Sur python.org, télécharge Python et coche « Add Python to PATH » pendant l'installation.</p></div>
+<div class="card"><div class="n">2</div><b>Télécharge Lohyx Hub</b><p>Clique sur le bouton « Télécharger » et mets le fichier LohyxHub.pyw dans un dossier.</p></div>
+<div class="card"><div class="n">3</div><b>Double-clique dessus</b><p>La fenêtre s'ouvre. Crée un profil, clique sur Jouer : Minecraft et Java s'installent tout seuls.</p></div></div>
+<p class="sub" style="margin-top:20px">Pour mettre à jour : rien à faire, Lohyx Hub te propose la nouvelle version dès qu'elle est disponible.</p></section>
+<section id="nouveautes"><h2>Nouveautés</h2><p class="sub">Les dernières versions.</p><div id="notes"><div class="log">Chargement…</div></div></section>
+<footer>Lohyx Hub est un projet indépendant. Il n'est pas affilié à Mojang, Microsoft ou Modrinth.<br>Minecraft est une marque de Mojang Studios.</footer>
+<script>
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const bloc=v=>`<div class="log"><b>Version ${esc(v.version)}</b><span>${esc(v.date||'')}</span><ul>${(v.notes||[]).map(n=>`<li>${esc(n)}</li>`).join('')}</ul></div>`;
+fetch('version.json?'+Date.now()).then(r=>r.json()).then(d=>{
+ document.getElementById('ver').textContent='Version '+d.version+(d.date?' · '+d.date:'')+' · Windows 10 / 11';
+ document.getElementById('notes').innerHTML=[d,...(d.historique||[])].map(bloc).join('')}).catch(()=>{document.getElementById('ver').textContent='Dernière version disponible';document.getElementById('notes').innerHTML='<div class="log">Impossible de charger les nouveautés.</div>'});
+</script></body></html>

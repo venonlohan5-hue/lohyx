@@ -1,0 +1,14 @@
+{
+  "version": "1.1.0",
+  "date": "2026-10-08",
+  "notes": [
+    "Première version de Lohyx Hub",
+    "Profils, mods, shaders et packs",
+    "Test de puissance du PC",
+    "Boost FPS, serveurs en direct, skins, actualités",
+    "Mises à jour automatiques"
+  ],
+  "fichier": "LohyxHub.pyw",
+  "sha256": "c2acacf338d11a24b853a434b2a16426b5d8a7ada915418981ba70c560c96703",
+  "historique": []
+}
