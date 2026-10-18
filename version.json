@@ -1,14 +1,26 @@
 {
-  "version": "1.1.0",
-  "date": "2026-10-08",
+  "version": "1.2.0",
+  "date": "2026-10-18",
   "notes": [
-    "Première version de Lohyx Hub",
-    "Profils, mods, shaders et packs",
-    "Test de puissance du PC",
-    "Boost FPS, serveurs en direct, skins, actualités",
-    "Mises à jour automatiques"
+    "Nouvelle interface : accueil, profils, modpacks populaires, actualités",
+    "Boutique de modpacks : installation en un clic (Fabric et Forge)",
+    "État « Installé ✔ » sur les mods et les modpacks",
+    "Paramètres rapides : résolution, plein écran, FPS max, mémoire, Java",
+    "Maps : sauvegarde de chaque monde, et réparation de l'installation"
   ],
   "fichier": "LohyxHub.pyw",
-  "sha256": "c2acacf338d11a24b853a434b2a16426b5d8a7ada915418981ba70c560c96703",
-  "historique": []
+  "sha256": "fb34c3861cdc716fa911276b94b800609fa9dcf1b7b28f4ed280824e91364846",
+  "historique": [
+    {
+      "version": "1.1.0",
+      "date": "2026-10-08",
+      "notes": [
+        "Première version de Lohyx Hub",
+        "Profils, mods, shaders et packs",
+        "Test de puissance du PC",
+        "Boost FPS, serveurs en direct, skins, actualités",
+        "Mises à jour automatiques"
+      ]
+    }
+  ]
 }
