@@ -27,17 +27,8 @@ section{padding:60px 6vw;max-width:1180px;margin:auto}h2{font-size:32px;font-wei
 .log{padding:20px 24px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid var(--line);margin-bottom:12px}.log b{color:var(--a)}.log span{color:var(--mut);font-size:13px;margin-left:8px}.log ul{margin:10px 0 0 20px;color:#c3ccd8;line-height:1.7;font-size:14.5px}
 footer{padding:40px 6vw;text-align:center;color:var(--mut);font-size:13px;border-top:1px solid var(--line);line-height:1.7}
 @media(max-width:700px){header a.l{display:none}}
-<footer style="text-align:center;padding:28px 16px">
-  <a href="mentions-legales.html"
-     style="display:inline-block;padding:12px 24px;border-radius:10px;
-            background:#7c6cff;color:#fff;text-decoration:none;
-            font-weight:600;font-size:.95rem">
-    Mentions légales
-  </a>
-  <p style="margin:14px 0 0;opacity:.6;font-size:.85rem">
-    Projet indépendant, non affilié à Mojang, Microsoft ou Modrinth.
-  </p>
-</footer><body>
+</style></head>
+<body>
 <div class="orb o1"></div><div class="orb o2"></div>
 <header><div class="logo"><img src="icone.png" alt="">LOHYX HUB</div><span class="sp"></span><a class="l" href="#fonctions">Fonctions</a><a class="l" href="#installer">Installer</a><a class="l" href="#nouveautes">Nouveautés</a><a class="btn" style="padding:9px 18px;font-size:14px" href="LohyxHub.exe" download>Télécharger</a></header>
 <div class="hero"><img src="icone.png" alt="Logo Lohyx Hub"><h1>LOHYX HUB</h1>
@@ -60,7 +51,8 @@ footer{padding:40px 6vw;text-align:center;color:var(--mut);font-size:13px;border
 <p class="sub" style="margin-top:14px">Tu préfères Python ? <a href="LohyxHub.pyw" download style="color:var(--a)">Télécharge la version .pyw</a> (Python à installer sur python.org, en cochant « Add Python to PATH »).</p>
 <p class="sub" style="margin-top:20px">Pour mettre à jour : rien à faire, Lohyx Hub te propose la nouvelle version dès qu'elle est disponible.</p></section>
 <section id="nouveautes"><h2>Nouveautés</h2><p class="sub">Les dernières versions.</p><div id="notes"><div class="log">Chargement…</div></div></section>
-<footer>Lohyx Hub est un projet indépendant. Il n'est pas affilié à Mojang, Microsoft ou Modrinth.<br>Minecraft est une marque de Mojang Studios.</footer>
+<footer>Lohyx Hub est un projet indépendant. Il n'est pas affilié à Mojang, Microsoft ou Modrinth.<br>Minecraft est une marque de Mojang Studios.<br>
+<a class="btn s" href="mentions-legales.html" style="margin-top:16px;padding:10px 22px;font-size:14px">Mentions légales</a></footer>
 <script>
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const bloc=v=>`<div class="log"><b>Version ${esc(v.version)}</b><span>${esc(v.date||'')}</span><ul>${(v.notes||[]).map(n=>`<li>${esc(n)}</li>`).join('')}</ul></div>`;
